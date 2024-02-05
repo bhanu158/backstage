@@ -64,7 +64,7 @@ const ApiDocsExplorerPage = createPageExtension({
 });
 
 const ApiDocsDefinitionEntityCard = createEntityCardExtension({
-  name: 'definition',
+  name: 'api-definition',
   loader: () =>
     import('./components/ApiDefinitionCard').then(m => <m.ApiDefinitionCard />),
 });
