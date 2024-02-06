@@ -42,8 +42,8 @@ import { useApp } from '@backstage/core-plugin-api';
 
 function ApiIcon() {
   const app = useApp();
-  const Component = app.getSystemIcon('kind:api')!;
-  return <Component />;
+  const KindApiSystemIcon = app.getSystemIcon('kind:api')!;
+  return <KindApiSystemIcon />;
 }
 
 const ApiDocsNavItem = createNavItemExtension({

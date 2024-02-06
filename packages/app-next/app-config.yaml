@@ -1,6 +1,9 @@
 app:
   experimental:
-    packages: 'all' # ✨
+    packages:
+      exclude:
+        - '@backstage/plugin-azure-devops'
+
   routes:
     bindings:
       catalog.viewTechDoc: techdocs.docRoot
@@ -21,7 +24,10 @@ app:
     - entity-card:catalog-graph/relations:
         config:
           height: 300
-    - entity-card:azure-devops/readme
+    # - entity-card:azure-devops/readme
+    - entity-card:api-docs/has-apis:
+        config:
+          filter: kind:component
     - entity-card:api-docs/consumed-apis:
         config:
           filter: kind:component
@@ -39,9 +45,9 @@ app:
     - entity-content:api-docs/definition
     - entity-content:api-docs/apis
     - entity-content:techdocs
-    - entity-content:azure-devops/pipelines
-    - entity-content:azure-devops/pull-requests
-    - entity-content:azure-devops/git-tags
+    # - entity-content:azure-devops/pipelines
+    # - entity-content:azure-devops/pull-requests
+    # - entity-content:azure-devops/git-tags
 
     # Org Plugin
     - entity-card:org/group-profile
