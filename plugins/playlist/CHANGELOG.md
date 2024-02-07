@@ -1,5 +1,11 @@
 # @backstage/plugin-playlist
 
+## 0.2.4-next.3
+
+### Patch Changes
+
+- 5a03537: Conditionally render playlist description only when it's non-empty
+
 ## 0.2.4-next.2
 
 ### Patch Changes

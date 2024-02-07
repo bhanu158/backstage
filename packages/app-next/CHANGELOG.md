@@ -1,5 +1,12 @@
 # example-app-next
 
+## 0.0.6-next.3
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-playlist@0.2.4-next.3
+
 ## 0.0.6-next.2
 
 ### Patch Changes
